@@ -26,9 +26,12 @@ const nextConfig = {
       },
     ],
   },
-  // eslint: {
-  //   dirs: ["src"],
-  // },
+  rewrites: () => [
+    {
+      source: "/api/:path*",
+      destination: "https://open.api.nexon.com/:path*",
+    },
+  ],
 }
 
 // Injected content via Sentry wizard below

@@ -1,7 +1,7 @@
 "use client"
 
 import { Box } from "~/components"
-import { AppBar, SideMenu } from "~/components/layout"
+import { AppBar, Footer, SideMenu } from "~/components/layout"
 import { ThemeRegistry } from "~/libs/styles"
 
 const DRAWER_WIDTH = 240
@@ -22,6 +22,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => (
             p: 3,
           }}>
           {children}
+          <Footer />
         </Box>
       </ThemeRegistry>
     </Box>

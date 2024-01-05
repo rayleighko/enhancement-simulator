@@ -64,5 +64,8 @@
     "twin.macro": "^3.4.0",
     "typescript": "^5",
     "webpack": "^5.89.0"
+  },
+  "peerDependencies": {
+    "axios":"^1.6.4"
   }
 }

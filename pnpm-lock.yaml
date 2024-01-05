@@ -44,6 +44,9 @@ dependencies:
   apisauce:
     specifier: ^3.0.1
     version: 3.0.1
+  axios:
+    specifier: ^1.6.4
+    version: 1.6.4
   nanoid:
     specifier: ^5.0.4
     version: 5.0.4

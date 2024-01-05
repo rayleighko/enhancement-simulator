@@ -3,6 +3,7 @@ export {
   AlertTitle,
   AppBar,
   Box,
+  Container,
   createTheme,
   CssBaseline,
   darkScrollbar,
