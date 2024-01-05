@@ -10,7 +10,7 @@
     "prepare": "husky install"
   },
   "engines": {
-    "node": "^20.9.0"
+    "node": "^18.19.0"
   },
   "dependencies": {
     "@emotion/cache": "^11.11.0",
