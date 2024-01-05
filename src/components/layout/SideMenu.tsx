@@ -1,9 +1,3 @@
-import {
-  Home as HomeIcon,
-  Logout as LogoutIcon,
-  Settings as SettingsIcon,
-  Support as SupportIcon,
-} from "@mui/icons-material"
 import Link from "next/link"
 
 import {
@@ -14,7 +8,8 @@ import {
   ListItemButton,
   ListItemIcon,
   ListItemText,
-} from "~/libs/mui"
+} from "~/components"
+import { HomeIcon, LogoutIcon, SettingsIcon, SupportIcon } from "~/icons"
 
 const DRAWER_WIDTH = 240
 

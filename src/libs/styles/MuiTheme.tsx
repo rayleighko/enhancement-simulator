@@ -1,6 +1,6 @@
 import colors from "tailwindcss/colors"
 
-import { createTheme, darkScrollbar } from "~/libs/mui"
+import { createTheme, darkScrollbar } from "~/components"
 
 export const MuiTheme = createTheme({
   breakpoints: {

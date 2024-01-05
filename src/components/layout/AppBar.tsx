@@ -1,6 +1,5 @@
-import { Dashboard as DashboardIcon } from "@mui/icons-material"
-
-import { AppBar as MuiAppBar, Toolbar, Typography } from "~/libs/mui"
+import { AppBar as MuiAppBar, Toolbar, Typography } from "~/components"
+import { DashboardIcon } from "~/icons"
 
 const AppBar = () => {
   return (

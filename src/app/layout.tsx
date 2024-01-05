@@ -1,7 +1,7 @@
 "use client"
 
+import { Box } from "~/components"
 import { AppBar, SideMenu } from "~/components/layout"
-import { Box } from "~/libs/mui"
 import { ThemeRegistry } from "~/libs/styles"
 
 const DRAWER_WIDTH = 240

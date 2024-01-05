@@ -4,7 +4,7 @@ import { Global } from "@emotion/react"
 import { FC, PropsWithChildren } from "react"
 import { GlobalStyles as BaseStyles } from "twin.macro"
 
-import { CssBaseline, ThemeProvider } from "~/libs/mui"
+import { CssBaseline, ThemeProvider } from "~/components"
 
 import NextAppDirEmotionCacheProvider from "./EmotionCache"
 import { globalStyles } from "./globalStyles"
