@@ -35,3 +35,7 @@ export type GeneralApiProblem<T = unknown> =
    * The data we received is not in the expected format.
    */
   | { kind: "bad-data"; data?: T }
+  /**
+   * The data we received is not in the expected format.
+   */
+  | { kind: "cancel"; data?: T }

@@ -9,7 +9,7 @@ import { GeneralApiProblem } from "./apiProblem.types"
  */
 export const getGeneralApiProblem = <T = unknown>(
   response: ApiResponse<T>,
-): GeneralApiProblem<T> | undefined => {
+): GeneralApiProblem<T> => {
   const { problem, data } = response
   switch (problem) {
     case "CONNECTION_ERROR":
@@ -38,8 +38,7 @@ export const getGeneralApiProblem = <T = unknown>(
           return { kind: "rejected", data }
       }
     case "CANCEL_ERROR":
-      return undefined
+      return { kind: "cancel", data }
   }
-
-  return undefined
+  return { kind: "unknown", temporary: true, data }
 }

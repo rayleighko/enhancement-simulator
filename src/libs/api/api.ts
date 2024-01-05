@@ -7,6 +7,7 @@
  */
 import { ApisauceInstance, create } from "apisauce"
 
+import { auth } from "~/constants/configures"
 import { loadString, saveString } from "~/libs/storage"
 
 import type { ApiConfig } from "./api.types"
@@ -42,8 +43,7 @@ export class Api {
     })
   }
   setAccessTokenInHeader = (): void => {
-    const accessToken = process.env.NEXON_ACCESS_TOKEN ?? ""
-    this.apisauce.setHeader("x-nxopen-api-key", accessToken)
+    this.apisauce.setHeader("x-nxopen-api-key", auth.nx_access_key)
   }
 }
 
